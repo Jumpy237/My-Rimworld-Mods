@@ -1,0 +1,4 @@
+C:\Users\58050297\source\repos\My-Rimworld-Mods\Non-Lethal-guns\Source\NonLethalGuns\obj\Debug\NonLethalGuns.csprojResolveAssemblyReference.cache
+C:\Users\58050297\source\repos\My-Rimworld-Mods\Non-Lethal-guns\Source\NonLethalGuns\obj\Debug\NonLethalGuns.csproj.CoreCompileInputs.cache
+C:\Users\58050297\source\repos\My-Rimworld-Mods\Non-Lethal-guns\Assemblies\NonLethalGuns.dll
+C:\Users\58050297\source\repos\My-Rimworld-Mods\Non-Lethal-guns\Source\NonLethalGuns\obj\Debug\NonLethalGuns.dll

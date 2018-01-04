@@ -15,7 +15,8 @@
       <DamageAmountBase>4</DamageAmountBase>
       <Speed>70</Speed>
     </projectile>
-    <HediffToAdd>DartHediff</HediffToAdd>
+    <HediffToAdd>DartBleed</HediffToAdd>
+	<thingClass>NonLethalGuns.Projectile_Dart</thingClass>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">

@@ -8,8 +8,8 @@ using UnityEngine;
 
 namespace NonLethalGuns
 {
-    public class ThingDef_Dart : Def
+    public class ThingDef_Dart : ThingDef
     {
-         
+        public HediffDef hediffToAdd = HediffDefOf_DartBleed.DartBleed;
     }
 }
