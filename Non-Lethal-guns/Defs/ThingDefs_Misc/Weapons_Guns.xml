@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ThingDefs>
+<Defs>
 
   <ThingDef Class="NonLethalGuns.ThingDef_Dart" ParentName="BaseBullet">
     <defName>NLG_Dart</defName>
@@ -120,4 +120,4 @@
     </graphicData>
   </ThingDef>
 
-</ThingDefs>
+</Defs>
