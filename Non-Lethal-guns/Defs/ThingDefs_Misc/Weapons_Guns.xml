@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ThingDefs>
+<Defs>
 
   <ThingDef Class="NonLethalGuns.ThingDef_Dart" ParentName="BaseBullet">
     <defName>NLG_Dart</defName>
@@ -12,21 +12,23 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>Bullet</damageDef>
-      <DamageAmountBase>4</DamageAmountBase>
-      <Speed>70</Speed>
+      <damageAmountBase>2</damageAmountBase>
+      <speed>70</speed>
     </projectile>
-    <HediffToAdd>DartHediff</HediffToAdd>
+    <hediffToAdd1>DartBleed</hediffToAdd1>
+	<hediffToAdd2>WoundInfection</hediffToAdd2>
+	<thingClass>NonLethalGuns.Projectile_Dart</thingClass>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>NLG_DartRifle</defName>
-    <label>Dart</label>
+    <label>Dart Pistol</label>
     <description>A gun that fire a dart that causes terrible bleeding</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Pistol</texPath>
+      <texPath>Weapon/DartPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <WorkToMake>15000</WorkToMake>
       <Mass>1.2</Mass>
@@ -39,16 +41,17 @@
     <costList>
       <Steel>100</Steel>
       <Plasteel>20</Plasteel>
+	  <HerbalMedicine>10</HerbalMedicine>
       <Component>2</Component>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>NLG_Dart</projectileDef>
-        <warmupTime>0.3</warmupTime>
-        <range>24</range>
-        <soundCast>ShotPistol</soundCast>
+        <defaultProjectile>NLG_Dart</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>18</range>
+        <soundCast>DartPistolSound</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -117,4 +120,4 @@
     </graphicData>
   </ThingDef>
 
-</ThingDefs>
+</Defs>

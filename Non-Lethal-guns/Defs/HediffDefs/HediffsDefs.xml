@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <HediffDef Name="InjuryBase" Abstract="True">
+    <hediffClass>Hediff_Injury</hediffClass>
+    <tendable>true</tendable>
+    <displayWound>true</displayWound>
+  </HediffDef>
+
+ <HediffDef ParentName="InjuryBase">
+		<defName>DartBleed</defName>
+		<label>Dart Wound</label>
+    <labelNoun>a cut</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>200.00</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsOld">
+        <oldLabel>cut scar</oldLabel>
+      </li>
+    </comps>
+		<injuryProps>
+			<painPerSeverity>0.0225</painPerSeverity>
+			<averagePainPerSeverityOld>0.00625</averagePainPerSeverityOld>
+			<bleedRate>0.8</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Cut off</destroyedLabel>
+			<destroyedOutLabel>Cut out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+ </Defs>
