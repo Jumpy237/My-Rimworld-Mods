@@ -10,6 +10,8 @@ namespace NonLethalGuns
 {
     public class ThingDef_Dart : ThingDef
     {
-        public HediffDef hediffToAdd = HediffDefOf_DartBleed.DartBleed;
+        public HediffDef hediffToAdd1 = HediffDefOf_DartBleed.DartBleed;
+        public HediffDef hediffToAdd2 = HediffDefOf.WoundInfection;
+       
     }
 }
